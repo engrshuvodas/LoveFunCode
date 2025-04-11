@@ -1,77 +1,87 @@
 <!-- README.md -->
 
-<h1 align="center">❤️ Do You Love Me? – A Cute, Funny Love Proposal Page ❤️</h1>
+<h1 align="center">💘 Do You Love Me? – The Funniest Love Proposal Page Ever 😍</h1>
 
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" width="80" />
+  <img src="https://media.giphy.com/media/l41YtZOb9EUABnuqA/giphy.gif" width="120" />
 </p>
 
 <p align="center">
-  A cute and interactive HTML page where you can propose to someone in a fun and playful way!
+  A hilarious love confession website where saying "No" is almost impossible 😜
 </p>
 
 <hr>
 
-<h2>🎯 Project Overview</h2>
+<h2>🎉 What Is This Madness?</h2>
 
 <p>
-  <strong>"Do You Love Me?"</strong> is a light-hearted and funny web project that asks a simple question: <em>Do you love me?</em> 💌  
-  It's filled with animation, sound effects, and a trickster <code>No</code> button that dances away when you try to click it!
+  This isn't just another HTML page — it's <strong>a mission to win hearts</strong> 💘 <br>
+  Whether you're a lover, prankster, or just bored — this page lets you ask the million-dollar question: <em>Do you love me?</em>
 </p>
 
-<h2>📱 Features</h2>
+<h2>😏 The Twist?</h2>
 
 <ul>
-  <li>💘 Animated heart effects when the user clicks "Yes"</li>
-  <li>😂 "No" button runs away when you try to click it</li>
-  <li>🎵 Background sound effects for both "Yes" and "No" interactions</li>
-  <li>⌨️ Typing effect with multiple funny messages</li>
-  <li>📱 Fully responsive on mobile and desktop</li>
-  <li>🔗 Footer with Instagram follow button and credits</li>
+  <li>Clicking “Yes” = 🎉 instant love explosion + happy sounds</li>
+  <li>Clicking “No”? Haha... good luck catching the button 🏃💨</li>
+  <li>Funny typing messages will tease and trap your crush 😈</li>
+  <li>Sweet GIF hugs & hearts flying like it’s Valentine’s Day every day</li>
+  <li>Bonus: Background music to set the mood 🎵</li>
 </ul>
 
-<h2>🖼️ Preview</h2>
+<h2>💡 Why You’ll Love It</h2>
 
 <p>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2s3cTd0MWw1b2YwbzZpYzhmdnN2djBpMTNjMmF1dWQ4cHgxdTgyNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26gsjCZpPolPr3sBy/giphy.gif" width="300" />
+  This page is for:
 </p>
-
-<h2>🚀 How to Use</h2>
-
-<ol>
-  <li>Download or clone the repository.</li>
-  <li>Open the <code>index.html</code> file in your browser.</li>
-  <li>Enjoy the experience and share it with your loved ones! 💞</li>
-</ol>
-
-<h2>📂 Folder Structure</h2>
-
-<pre>
-📁 do-you-love-me/
- ├── 🖼️ bubududu-panda.gif
- ├── 🖼️ miss-you-hug.gif
- ├── 🎵 Sound files (hosted online)
- └── 📄 index.html
-</pre>
-
-<h2>📸 Screenshot</h2>
-
-<p>
-  <img src="https://i.imgur.com/BuSScTp.png" width="500" alt="Screenshot">
-</p>
-
-<h2>🔗 Follow Me</h2>
 
 <ul>
-  <li>👨‍💻 Developer: Engr Shuvo Das</li>
-  <li>📷 Instagram: <a href="https://www.instagram.com/engrshuvo74886/" target="_blank">@engrshuvo74886</a></li>
-  <li>💬 DM me for the source code or ideas</li>
+  <li>💌 Proposing in a fun way</li>
+  <li>😂 Making your crush laugh</li>
+  <li>💻 Learning cute little web tricks</li>
+  <li>🎁 Or just sending it to someone for a laugh</li>
 </ul>
 
-<h2>📜 License</h2>
-
-<p>This project is made for fun and learning purposes. Use it, edit it, and spread love ❤️</p>
+<h2>📸 Sneak Peek</h2>
 
 <p align="center">
-  Made with 💖 by <strong>Engr Shuvo Das</strong>
+  <img src="https://i.imgur.com/oEb3mE9.gif" width="350" />
+  <br>
+  <em>When they try to click "No" and it runs away... 😏</em>
+</p>
+
+<h2>📁 How to Play Cupid</h2>
+
+<ol>
+  <li>Download this repo (or clone like a techy hero)</li>
+  <li>Open <code>index.html</code> in your browser</li>
+  <li>Send to your crush, bestie, or anyone who needs a laugh</li>
+</ol>
+
+<h2>🔥 Tech Stuff (for the curious ones)</h2>
+
+<pre>
+⚙️ Pure HTML (No CSS frameworks)
+🎶 Audio files hosted online
+🎮 JavaScript for button tricks, sound, animation
+🎨 Cute GIFs for hugs & vibes
+</pre>
+
+<h2>💬 DM Me for the Code or Collab</h2>
+
+<ul>
+  <li>🧑‍💻 Name: Engr Shuvo Das</li>
+  <li>📲 WhatsApp: +8801765245872</li>
+  <li>📷 Instagram: <a href="https://www.instagram.com/engrshuvo74886/" target="_blank">@engrshuvo74886</a></li>
+</ul>
+
+<h2>📄 License</h2>
+
+<p>
+  Free to use, remix, propose, prank 😎<br>
+  Just don’t use it to break hearts 💔
+</p>
+
+<p align="center">
+  💖 Made with Love, Jokes, and Code by <strong>Shuvo Das</strong> 💖
 </p>
