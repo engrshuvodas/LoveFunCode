@@ -22,6 +22,11 @@ It's designed with fun effects, floating hearts, sound effects, and a tricky "No
 
 <img src="Do You Love Me.png" alt="Project Preview" width="100%">
 
+<h3>🌐 Live Demo</h3>
+<p>
+  👉 <a href="https://engrshuvodas.github.io/LoveFunCode/" target="_blank">Click here to view the live version</a>
+</p>
+
 <h3>🚀 How to Use</h3>
 <ol>
   <li>Download or clone this repository</li>
