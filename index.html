@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Do You Love Me?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'Wild Love';
+      src: url('Wild Love.otf') format('opentype');
+    }
+
+    body {
+      background-color: #ffe6f0;
+      text-align: center;
+      font-family: 'Wild Love', cursive;
+      margin: 0;
+      padding: 0;
+    }
+
+    #mainContainer, #resultContainer {
+      padding-top: 66px; /* 10% larger */
+    }
+
+    #mainImage {
+      width: 165px; /* 10% larger */
+      height: auto;
+      margin-bottom: 22px;
+    }
+
+    button {
+      margin: 11px;
+      padding: 11px 28px; /* 10% larger */
+      font-size: 24px;     /* 10% larger */
+      background-color: #ff5c8a;
+      color: white;
+      border: none;
+      border-radius: 11px;
+      cursor: pointer;
+      font-family: 'Wild Love', cursive;
+    }
+
+    h2, h3 {
+      font-size: 33px; /* 10% larger */
+      margin-bottom: 22px;
+      font-family: 'Wild Love', cursive;
+    }
+
+    #resultContainer {
+      display: none;
+    }
+
+    #resultImage {
+      width: 220px; /* 10% larger */
+      height: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      #mainImage, #resultImage {
+        width: 80%;
+      }
+
+      button {
+        width: 70%;
+        font-size: 22px;
+        padding: 10px 15px;
+      }
+
+      h2, h3 {
+        font-size: 28px;
+      }
+
+      #mainContainer, #resultContainer {
+        padding-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Page -->
+  <div id="mainContainer">
+    <img src="bubududu-panda.gif" id="mainImage" alt="Panda Image">
+    <h2>Do you love me?</h2>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <!-- Result Page -->
+  <div id="resultContainer">
+    <h2>I LOVE YOU TOO 🥰</h2>
+    <img src="miss-you-hug.gif" id="resultImage" alt="Hug Image">
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const mainContainer = document.getElementById("mainContainer");
+    const resultContainer = document.getElementById("resultContainer");
+
+    noBtn.addEventListener("mouseover", () => {
+      const containerWidth = window.innerWidth - noBtn.offsetWidth;
+      const containerHeight = window.innerHeight - noBtn.offsetHeight;
+      const newX = Math.random() * containerWidth;
+      const newY = Math.random() * containerHeight;
+      noBtn.style.position = "absolute";
+      noBtn.style.left = `${newX}px`;
+      noBtn.style.top = `${newY}px`;
+    });
+
+    yesBtn.addEventListener("click", () => {
+      mainContainer.style.display = "none";
+      resultContainer.style.display = "block";
+    });
+  </script>
+</body>
+</html>
