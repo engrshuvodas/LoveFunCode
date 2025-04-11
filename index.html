@@ -5,81 +5,78 @@
   <title>Do You Love Me?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @font-face {
-      font-family: 'Wild Love';
-      src: url('Wild Love.otf') format('opentype');
-    }
-
     body {
       background-color: #ffe6f0;
       text-align: center;
-      font-family: 'Wild Love', cursive;
+      font-family: 'Comic Sans MS', cursive;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
 
-    #mainContainer, #resultContainer {
-      padding-top: 66px; /* 10% larger */
+    #mainContainer, #resultContainer, #heartEffectContainer {
+      padding-top: 60px;
     }
 
     #mainImage {
-      width: 165px; /* 10% larger */
-      height: auto;
-      margin-bottom: 22px;
+      width: 160px;
+      margin-bottom: 20px;
     }
 
     button {
-      margin: 11px;
-      padding: 11px 28px; /* 10% larger */
-      font-size: 24px;     /* 10% larger */
+      margin: 10px;
+      padding: 12px 30px;
+      font-size: 22px;
       background-color: #ff5c8a;
       color: white;
       border: none;
-      border-radius: 11px;
+      border-radius: 10px;
       cursor: pointer;
-      font-family: 'Wild Love', cursive;
     }
 
-    h2, h3 {
-      font-size: 33px; /* 10% larger */
-      margin-bottom: 22px;
-      font-family: 'Wild Love', cursive;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
-    #resultContainer {
+    #resultContainer, #heartEffectContainer {
       display: none;
     }
 
     #resultImage {
-      width: 220px; /* 10% larger */
-      height: auto;
+      width: 200px;
     }
 
-    /* Responsive Design */
-    @media (max-width: 480px) {
-      #mainImage, #resultImage {
-        width: 80%;
-      }
+    .heart {
+      position: fixed;
+      color: red;
+      font-size: 24px;
+      animation: float 5s linear forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
 
-      button {
-        width: 70%;
-        font-size: 22px;
-        padding: 10px 15px;
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
       }
+      100% {
+        transform: translateY(-600px) scale(1.5);
+        opacity: 0;
+      }
+    }
 
-      h2, h3 {
-        font-size: 28px;
-      }
-
-      #mainContainer, #resultContainer {
-        padding-top: 50px;
-      }
+    #loadingText {
+      font-size: 28px;
+      font-weight: bold;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
 
-  <!-- First Page -->
+  <!-- Main Page -->
   <div id="mainContainer">
     <img src="bubududu-panda.gif" id="mainImage" alt="Panda Image">
     <h2>Do you love me?🫣</h2>
@@ -87,32 +84,74 @@
     <button id="noBtn">No</button>
   </div>
 
-  <!-- Result Page -->
+  <!-- Animation Page -->
+  <div id="heartEffectContainer">
+    <h2 id="loadingText">Processing your feelings..0% ❤️</h2>
+  </div>
+
+  <!-- Final Result -->
   <div id="resultContainer">
-    <h2>I knew it😍!</h2>
+    <h2>I knew it 😍!</h2>
     <img src="miss-you-hug.gif" id="resultImage" alt="Hug Image">
   </div>
+
+  <!-- Sound -->
+  <audio id="loveSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
 
   <script>
     const yesBtn = document.getElementById("yesBtn");
     const noBtn = document.getElementById("noBtn");
     const mainContainer = document.getElementById("mainContainer");
+    const heartEffectContainer = document.getElementById("heartEffectContainer");
     const resultContainer = document.getElementById("resultContainer");
+    const loveSound = document.getElementById("loveSound");
+    const loadingText = document.getElementById("loadingText");
 
+    // Moving "No" button
     noBtn.addEventListener("mouseover", () => {
-      const containerWidth = window.innerWidth - noBtn.offsetWidth;
-      const containerHeight = window.innerHeight - noBtn.offsetHeight;
-      const newX = Math.random() * containerWidth;
-      const newY = Math.random() * containerHeight;
-      noBtn.style.position = "absolute";
-      noBtn.style.left = `${newX}px`;
-      noBtn.style.top = `${newY}px`;
+      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+      noBtn.style.position = 'absolute';
+      noBtn.style.left = `${x}px`;
+      noBtn.style.top = `${y}px`;
     });
 
+    // Click on "Yes"
     yesBtn.addEventListener("click", () => {
       mainContainer.style.display = "none";
-      resultContainer.style.display = "block";
+      heartEffectContainer.style.display = "block";
+      loveSound.play();
+
+      let percent = 0;
+      const duration = 3000; // 3 seconds
+      const intervalTime = duration / 100; // 30ms per increment
+
+      const heartInterval = setInterval(() => {
+        percent++;
+        loadingText.innerHTML = `Processing your feelings.. ${percent}% ❤️`;
+        createHeart();
+
+        if (percent >= 100) {
+          clearInterval(heartInterval);
+          heartEffectContainer.style.display = "none";
+          resultContainer.style.display = "block";
+        }
+      }, intervalTime);
     });
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerText = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = "100vh";
+      heart.style.fontSize = Math.random() * 20 + 20 + "px";
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
   </script>
+
 </body>
 </html>
