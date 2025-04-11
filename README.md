@@ -1,6 +1,10 @@
 <!-- README.md -->
 
+<<<<<<< HEAD
 <h1 align="center">💘 Do You Love Me? – The Funniest Love Proposal Page Ever 😍</h1>
+=======
+<h1 align="center">❤️Do You Love Me? – A Cute, Funny Love Proposal Page❤️</h1>
+>>>>>>> ca7d5a4c2934394f0db334f36a9b22aeb7b92154
 
 <p align="center">
   <img src="https://media.giphy.com/media/l41YtZOb9EUABnuqA/giphy.gif" width="120" />
