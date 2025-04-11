@@ -1,68 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>LoveTrap Project README</title>
-  <style>
-    body {
-      background-color: #fff0f5;
-      color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-    }
 
-    h1, h2, h3 {
-      color: #ff3e7f;
-      font-family: 'Comic Sans MS', cursive;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      margin-bottom: 0;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 2em;
-    }
-
-    p {
-      font-size: 1.1em;
-    }
-
-    code {
-      background-color: #fff3f3;
-      padding: 3px 5px;
-      border-radius: 5px;
-      font-family: monospace;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .gif {
-      display: block;
-      max-width: 100%;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .center {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
 
   <h1>💘 LoveTrap</h1>
 
@@ -112,5 +48,3 @@
     <h2>💡 Spread the Love. One click at a time 💘</h2>
   </div>
 
-</body>
-</html>
