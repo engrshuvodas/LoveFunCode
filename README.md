@@ -1,6 +1,6 @@
 <!-- README.md -->
 
-<h1 align="center">❤️ Do You Love Me? – A Cute, Funny Love Proposal Page ❤️</h1>
+<h1 align="center">❤️Do You Love Me? – A Cute, Funny Love Proposal Page❤️</h1>
 
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" width="80" />
