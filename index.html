@@ -72,86 +72,166 @@
       font-weight: bold;
       display: inline-block;
     }
+
+    #typeEffect {
+      font-size: 18px;
+      color: #cc0066;
+      font-style: italic;
+      margin: 10px;
+      min-height: 24px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Main Page -->
-  <div id="mainContainer">
-    <img src="bubududu-panda.gif" id="mainImage" alt="Panda Image">
-    <h2>Do you love me?🫣</h2>
+<!-- Main Page -->
+<div id="mainContainer">
+  <img src="bubududu-panda.gif" id="mainImage" alt="Panda Image">
+  <h2>Do you love me?🫣</h2>
+  <p id="typeEffect"></p>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
     <button id="yesBtn">Yes</button>
     <button id="noBtn">No</button>
   </div>
+</div>
 
-  <!-- Animation Page -->
-  <div id="heartEffectContainer">
-    <h2 id="loadingText">Processing your feelings..0% ❤️</h2>
-  </div>
+<!-- Animation Page -->
+<div id="heartEffectContainer">
+  <h2 id="loadingText">Processing your feelings..0% ❤️</h2>
+</div>
 
-  <!-- Final Result -->
-  <div id="resultContainer">
-    <h2>I knew it 😍!</h2>
-    <img src="miss-you-hug.gif" id="resultImage" alt="Hug Image">
-  </div>
+<!-- Final Result -->
+<div id="resultContainer">
+  <h2>I knew it 😍!</h2>
+  <img src="miss-you-hug.gif" id="resultImage" alt="Hug Image">
+</div>
 
-  <!-- Sound -->
-  <audio id="loveSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+<!-- Sounds -->
+<audio id="loveSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+<audio id="noSound" src="https://www.fesliyanstudios.com/play-mp3/6678" preload="auto"></audio>
 
-  <script>
-    const yesBtn = document.getElementById("yesBtn");
-    const noBtn = document.getElementById("noBtn");
-    const mainContainer = document.getElementById("mainContainer");
-    const heartEffectContainer = document.getElementById("heartEffectContainer");
-    const resultContainer = document.getElementById("resultContainer");
-    const loveSound = document.getElementById("loveSound");
-    const loadingText = document.getElementById("loadingText");
+<script>
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
+  const mainContainer = document.getElementById("mainContainer");
+  const heartEffectContainer = document.getElementById("heartEffectContainer");
+  const resultContainer = document.getElementById("resultContainer");
+  const loveSound = document.getElementById("loveSound");
+  const noSound = document.getElementById("noSound");
+  const loadingText = document.getElementById("loadingText");
 
-    // Moving "No" button
-    noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-      noBtn.style.position = 'absolute';
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
-    });
+  // Play sound on hover
+  noBtn.addEventListener("mouseenter", () => {
+    noSound.currentTime = 0;
+    noSound.play();
+  });
 
-    // Click on "Yes"
-    yesBtn.addEventListener("click", () => {
-      mainContainer.style.display = "none";
-      heartEffectContainer.style.display = "block";
-      loveSound.play();
+  // Move "No" button randomly
+  noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+    noBtn.style.position = 'absolute';
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+  });
 
-      let percent = 0;
-      const duration = 3000; // 3 seconds
-      const intervalTime = duration / 100; // 30ms per increment
+  // Click on "Yes"
+  yesBtn.addEventListener("click", () => {
+    mainContainer.style.display = "none";
+    heartEffectContainer.style.display = "block";
+    loveSound.play();
 
-      const heartInterval = setInterval(() => {
-        percent++;
-        loadingText.innerHTML = `Processing your feelings.. ${percent}% ❤️`;
-        createHeart();
+    let percent = 0;
+    const duration = 3000;
+    const intervalTime = duration / 100;
 
-        if (percent >= 100) {
-          clearInterval(heartInterval);
-          heartEffectContainer.style.display = "none";
-          resultContainer.style.display = "block";
-        }
-      }, intervalTime);
-    });
+    const heartInterval = setInterval(() => {
+      percent++;
+      loadingText.innerHTML = `Processing your feelings.. ${percent}% ❤️`;
+      createHeart();
 
-    function createHeart() {
-      const heart = document.createElement("div");
-      heart.classList.add("heart");
-      heart.innerText = "❤️";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.top = "100vh";
-      heart.style.fontSize = Math.random() * 20 + 20 + "px";
-      document.body.appendChild(heart);
-      setTimeout(() => {
-        heart.remove();
-      }, 5000);
+      if (percent >= 100) {
+        clearInterval(heartInterval);
+        heartEffectContainer.style.display = "none";
+        resultContainer.style.display = "block";
+      }
+    }, intervalTime);
+  });
+
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerText = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => {
+      heart.remove();
+    }, 5000);
+  }
+
+  // Typewriter effect with multiple messages
+  const textElement = document.getElementById("typeEffect");
+  const messages = [
+    "Don't even try to escape",
+    "Click 'No' if you're heartless",
+    "Bet you can’t catch the 'No'",
+    "Only the brave dare to say 'No'",
+    "Wanna play hard to get Try hitting 'No'",
+    "Click 'No' if you don’t believe in love",
+    "Careful 'No' is slippery",
+    "Only legends catch the 'No' button",
+    "Try to say 'No' if you can",
+    "If you don’t love me prove it — click 'No'",
+    "Think you're cold Hit 'No' and prove it",
+    "Clicking 'No' means no cuddles for you",
+    "Brave enough to break hearts Try 'No'",
+    "Love is just one click away or not",
+    "If 'No' is your choice prepare for sadness",
+    "Clicking 'No' ends the fairytale",
+    "Say 'No' and face the consequences",
+    "Break my heart go on click 'No'",
+    "Prove you're tough click 'No' if you dare",
+    "You really gonna say 'No' to this face",
+    "No hugs if you click 'No'",
+    "Don’t play games unless you click 'No'",
+    "'No' leads to eternal loneliness",
+    "Clicking 'No' disables all the fun",
+    "Hit 'No' and make a panda cry",
+    "Feeling heartless today Tap 'No'",
+    "Only villains click 'No'",
+    "Skip the 'No' save a soul",
+    "'No' means deleting all your cookies",
+    "Click 'No' and lose karma points"
+  ];
+
+  let messageIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeLoop() {
+    const currentText = messages[messageIndex];
+    if (isDeleting) {
+      charIndex--;
+      textElement.textContent = currentText.substring(0, charIndex);
+    } else {
+      charIndex++;
+      textElement.textContent = currentText.substring(0, charIndex);
     }
-  </script>
+
+    if (!isDeleting && charIndex === currentText.length) {
+      setTimeout(() => isDeleting = true, 1000);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      messageIndex = (messageIndex + 1) % messages.length;
+    }
+
+    setTimeout(typeLoop, isDeleting ? 40 : 80);
+  }
+
+  typeLoop();
+</script>
 
 </body>
 </html>
