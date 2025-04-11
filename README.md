@@ -1,91 +1,49 @@
-<!-- README.md -->
-
-<<<<<<< HEAD
-<h1 align="center">💘 Do You Love Me? – The Funniest Love Proposal Page Ever 😍</h1>
-=======
-<h1 align="center">❤️Do You Love Me? – A Cute, Funny Love Proposal Page❤️</h1>
->>>>>>> ca7d5a4c2934394f0db334f36a9b22aeb7b92154
-
-<p align="center">
-  <img src="https://media.giphy.com/media/l41YtZOb9EUABnuqA/giphy.gif" width="120" />
-</p>
-
-<p align="center">
-  A hilarious love confession website where saying "No" is almost impossible 😜
-</p>
-
-<hr>
-
-<h2>🎉 What Is This Madness?</h2>
+<h2>💖 Do You Love Me? - A Fun Interactive Love Page</h2>
 
 <p>
-  This isn't just another HTML page — it's <strong>a mission to win hearts</strong> 💘 <br>
-  Whether you're a lover, prankster, or just bored — this page lets you ask the million-dollar question: <em>Do you love me?</em>
+This is a playful and interactive HTML project where users are asked one simple but powerful question: <strong>"Do you love me?"</strong>  
+It's designed with fun effects, floating hearts, sound effects, and a tricky "No" button that keeps running away!
 </p>
 
-<h2>😏 The Twist?</h2>
-
+<h3>✨ Features</h3>
 <ul>
-  <li>Clicking “Yes” = 🎉 instant love explosion + happy sounds</li>
-  <li>Clicking “No”? Haha... good luck catching the button 🏃💨</li>
-  <li>Funny typing messages will tease and trap your crush 😈</li>
-  <li>Sweet GIF hugs & hearts flying like it’s Valentine’s Day every day</li>
-  <li>Bonus: Background music to set the mood 🎵</li>
+  <li>🫣 Cute Panda Animation</li>
+  <li>❤️ Falling Heart Effects</li>
+  <li>🔊 Romantic Sound Effects</li>
+  <li>😂 A "No" Button That’s Hard to Click</li>
+  <li>⌨️ Typing Text Effect for Extra Fun</li>
+  <li>📱 Fully Responsive on Mobile & PC</li>
 </ul>
 
-<h2>💡 Why You’ll Love It</h2>
-
+<h3>📸 Sneak Peek</h3>
 <p>
-  This page is for:
+  Here's a quick preview of the project 👇
 </p>
 
-<ul>
-  <li>💌 Proposing in a fun way</li>
-  <li>😂 Making your crush laugh</li>
-  <li>💻 Learning cute little web tricks</li>
-  <li>🎁 Or just sending it to someone for a laugh</li>
-</ul>
+<img src="Do You Love Me.png" alt="Project Preview" width="100%">
 
-<h2>📸 Sneak Peek</h2>
-
-<p align="center">
-  <img src="https://i.imgur.com/oEb3mE9.gif" width="350" />
-  <br>
-  <em>When they try to click "No" and it runs away... 😏</em>
-</p>
-
-<h2>📁 How to Play Cupid</h2>
-
+<h3>🚀 How to Use</h3>
 <ol>
-  <li>Download this repo (or clone like a techy hero)</li>
-  <li>Open <code>index.html</code> in your browser</li>
-  <li>Send to your crush, bestie, or anyone who needs a laugh</li>
+  <li>Download or clone this repository</li>
+  <li>Open the <code>index.html</code> file in your browser</li>
+  <li>Have fun and share it with someone special ❤️</li>
 </ol>
 
-<h2>🔥 Tech Stuff (for the curious ones)</h2>
-
-<pre>
-⚙️ Pure HTML (No CSS frameworks)
-🎶 Audio files hosted online
-🎮 JavaScript for button tricks, sound, animation
-🎨 Cute GIFs for hugs & vibes
-</pre>
-
-<h2>💬 DM Me for the Code or Collab</h2>
-
+<h3>🔧 Technologies Used</h3>
 <ul>
-  <li>🧑‍💻 Name: Engr Shuvo Das</li>
-  <li>📲 WhatsApp: +8801765245872</li>
-  <li>📷 Instagram: <a href="https://www.instagram.com/engrshuvo74886/" target="_blank">@engrshuvo74886</a></li>
+  <li>✅ HTML5</li>
+  <li>✅ JavaScript (Vanilla)</li>
 </ul>
 
-<h2>📄 License</h2>
-
+<h3>📩 Want the Full Source Code?</h3>
 <p>
-  Free to use, remix, propose, prank 😎<br>
-  Just don’t use it to break hearts 💔
+  Follow me on Instagram: <a href="https://www.instagram.com/engrshuvo74886/" target="_blank">@engrshuvo74886</a><br>
+  DM me for full access and personalized help!
 </p>
 
-<p align="center">
-  💖 Made with Love, Jokes, and Code by <strong>Shuvo Das</strong> 💖
+<h3>🙌 Special Thanks</h3>
+<p>
+  Shoutout to all the creative minds and romantic coders who inspired this interactive idea 💡  
 </p>
+
+<h4>🧑‍💻 Developed with 💘 by Engr Shuvo Das</h4>
