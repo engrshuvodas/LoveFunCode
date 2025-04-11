@@ -1,50 +1,77 @@
+<!-- README.md -->
 
+<h1 align="center">❤️ Do You Love Me? – A Cute, Funny Love Proposal Page ❤️</h1>
 
-  <h1>💘 LoveTrap</h1>
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" width="80" />
+</p>
 
-  <div class="section">
-    <h2>🎮 What is LoveTrap?</h2>
-    <p>Imagine this: You're casually scrolling... and <strong>BOOM!</strong> A cute panda appears 🐼 asking:</p>
-    <p class="center"><em>"Do you love me?" ❤️</em></p>
-    <p>You try to click <strong>No</strong>, but it escapes like your GPA in college 😭. So you end up clicking <strong>Yes</strong>... and guess what?</p>
-    <p>A sweet bear hug gif pops up with the message:</p>
-    <p class="center"><strong>"I LOVE YOU TOO 🥰"</strong></p>
-    <img src="https://media.tenor.com/OJhl-L4iAY4AAAAC/miss-you-hug.gif" alt="Love Gif" class="gif">
-  </div>
+<p align="center">
+  A cute and interactive HTML page where you can propose to someone in a fun and playful way!
+</p>
 
-  <div class="section">
-    <h2>🔧 Built With:</h2>
-    <ul>
-      <li>💻 HTML5</li>
-      <li>🎨 CSS3 (with pink cuteness)</li>
-      <li>⚙️ JavaScript (for the sneaky button)</li>
-      <li>🐼 Tenor GIFs</li>
-      <li>✍️ Custom Font: <code>Wild Love</code></li>
-    </ul>
-  </div>
+<hr>
 
-  <div class="section">
-    <h2>📱 Mobile Friendly?</h2>
-    <p>Absolutely! Works on phones like a charm. Play it while texting, Netflixing, or even while pretending to be busy 😎</p>
-  </div>
+<h2>🎯 Project Overview</h2>
 
-  <div class="section">
-    <h2>📁 How to Play:</h2>
-    <ol>
-      <li>Open the <code>index.html</code> file</li>
-      <li>Stare at the panda... feel the emotional trap 🐼</li>
-      <li>Try clicking “No” — (spoiler: you won’t catch it 😂)</li>
-      <li>Click “Yes” and feel the love 💖</li>
-    </ol>
-  </div>
+<p>
+  <strong>"Do You Love Me?"</strong> is a light-hearted and funny web project that asks a simple question: <em>Do you love me?</em> 💌  
+  It's filled with animation, sound effects, and a trickster <code>No</code> button that dances away when you try to click it!
+</p>
 
-  <div class="section">
-    <h2>🎁 Why I Made This:</h2>
-    <p>Sometimes, all we need is a little fun, a little love, and a sneaky <strong>Yes/No game</strong> to make someone laugh, smile, or even say "awww..." 😍</p>
-    <p>Send this to your crush, your best friend, or just someone who needs a hug.</p>
-  </div>
+<h2>📱 Features</h2>
 
-  <div class="section center">
-    <h2>💡 Spread the Love. One click at a time 💘</h2>
-  </div>
+<ul>
+  <li>💘 Animated heart effects when the user clicks "Yes"</li>
+  <li>😂 "No" button runs away when you try to click it</li>
+  <li>🎵 Background sound effects for both "Yes" and "No" interactions</li>
+  <li>⌨️ Typing effect with multiple funny messages</li>
+  <li>📱 Fully responsive on mobile and desktop</li>
+  <li>🔗 Footer with Instagram follow button and credits</li>
+</ul>
 
+<h2>🖼️ Preview</h2>
+
+<p>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2s3cTd0MWw1b2YwbzZpYzhmdnN2djBpMTNjMmF1dWQ4cHgxdTgyNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26gsjCZpPolPr3sBy/giphy.gif" width="300" />
+</p>
+
+<h2>🚀 How to Use</h2>
+
+<ol>
+  <li>Download or clone the repository.</li>
+  <li>Open the <code>index.html</code> file in your browser.</li>
+  <li>Enjoy the experience and share it with your loved ones! 💞</li>
+</ol>
+
+<h2>📂 Folder Structure</h2>
+
+<pre>
+📁 do-you-love-me/
+ ├── 🖼️ bubududu-panda.gif
+ ├── 🖼️ miss-you-hug.gif
+ ├── 🎵 Sound files (hosted online)
+ └── 📄 index.html
+</pre>
+
+<h2>📸 Screenshot</h2>
+
+<p>
+  <img src="https://i.imgur.com/BuSScTp.png" width="500" alt="Screenshot">
+</p>
+
+<h2>🔗 Follow Me</h2>
+
+<ul>
+  <li>👨‍💻 Developer: Engr Shuvo Das</li>
+  <li>📷 Instagram: <a href="https://www.instagram.com/engrshuvo74886/" target="_blank">@engrshuvo74886</a></li>
+  <li>💬 DM me for the source code or ideas</li>
+</ul>
+
+<h2>📜 License</h2>
+
+<p>This project is made for fun and learning purposes. Use it, edit it, and spread love ❤️</p>
+
+<p align="center">
+  Made with 💖 by <strong>Engr Shuvo Das</strong>
+</p>
