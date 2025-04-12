@@ -145,8 +145,20 @@
       footer {
         font-size: 14px;
         flex-direction: column;
-        gap: 5px;
         text-align: center;
+        gap: 5px;
+      }
+
+      footer > div {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+
+      .follow-msg {
+        margin-left: 0;
+        margin-bottom: 5px;
       }
     }
   </style>
@@ -182,7 +194,7 @@
 <!-- Footer -->
 <footer>
   <div>2025 © Engr Shuvo Das</div>
-  <div style="display: flex; align-items: center;">
+  <div>
     <span class="follow-msg">For Source Code, Follow my Instagram & DM me</span>
     <button id="instaBtn" onclick="window.open('https://www.instagram.com/engrshuvo74886/', '_blank')">
       <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
