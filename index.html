@@ -122,31 +122,47 @@
 
     @media (max-width: 600px) {
       #mainImage {
-        width: 120px;
+        width: 100px;
       }
 
       button {
-        font-size: 18px;
-        padding: 10px 25px;
+        font-size: 16px;
+        padding: 10px 20px;
+        max-width: 120px;
+        white-space: nowrap;
       }
 
       #loadingText {
-        font-size: 22px;
+        font-size: 20px;
+        padding: 0 10px;
       }
 
       h2 {
-        font-size: 24px;
+        font-size: 22px;
+        padding: 0 10px;
       }
 
       #resultImage {
-        width: 150px;
+        width: 130px;
+      }
+
+      #typeEffect {
+        font-size: 14px;
+        padding: 0 10px;
+      }
+
+      #mainContainer, #resultContainer, #heartEffectContainer {
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       footer {
         font-size: 14px;
         flex-direction: column;
         text-align: center;
-        gap: 5px;
+        gap: 8px;
+        padding: 12px 15px;
       }
 
       footer > div {
@@ -159,6 +175,12 @@
       .follow-msg {
         margin-left: 0;
         margin-bottom: 5px;
+        font-size: 12px;
+      }
+
+      #instaBtn img {
+        width: 24px;
+        height: 24px;
       }
     }
   </style>
@@ -214,9 +236,6 @@
   </div>
 
 </footer>
-
-
-
 
 <script>
   const yesBtn = document.getElementById("yesBtn");
