@@ -183,6 +183,64 @@
         height: 24px;
       }
     }
+
+    /* ===== Footer Control Area ===== */
+    .footer-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .footer-instagram-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .footer-bottom {
+      font-size: 13px;
+      color: #333;
+      max-width: 100%;
+      word-wrap: break-word;
+      text-align: left;
+
+      /* 👇 Desktop Position Control (manually adjust this) */
+      margin-left: 10px; /* 👈 Move 10px from left */
+      /* margin-right: 10px; */ /* 👈 OR use this instead to move from right */
+    }
+
+    @media (max-width: 600px) {
+      .footer-top, 
+      .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .footer-instagram-icon {
+        width: 22px;
+        height: 22px;
+      }
+
+      .footer-text {
+        font-size: 12px;
+      }
+
+      .footer-bottom {
+        font-size: 12px;
+        margin: 0 auto !important;   /* 👈 Center for mobile */
+        text-align: center !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -214,8 +272,7 @@
 <audio id="noSound" src="https://www.fesliyanstudios.com/play-mp3/6678" preload="auto"></audio>
 
 <!-- Footer -->
-<footer style="padding: 15px 20px; text-align: center; font-family: sans-serif;">
-
+<footer>
   <!-- Line 1 -->
   <div class="footer-top">
     <span class="footer-text">
@@ -230,69 +287,13 @@
 
   <!-- Line 2 -->
   <div class="footer-bottom">
-    © 2025 <strong>LoveFunCode</strong> | Developed by 
+    © 2026 <strong>LoveFunCode</strong> | Developed by 
     <a href="https://github.com/engrshuvodas" target="_blank" 
        style="color: #e91e63; text-decoration: none; font-weight: bold;">
       Engr Shuvo Das
     </a>
   </div>
-
 </footer>
-
-<style>
-  .footer-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 13px;
-    color: #555;
-  }
-
-  .footer-instagram-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .footer-bottom {
-    font-size: 13px;
-    color: #333;
-    max-width: 100%;
-    word-wrap: break-word;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  /* Responsive Design for Mobile */
-  @media (max-width: 600px) {
-    .footer-top, 
-    .footer-bottom {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    .footer-instagram-icon {
-      width: 22px;
-      height: 22px;
-    }
-
-    .footer-text {
-      font-size: 12px;
-    }
-
-    .footer-bottom {
-      font-size: 12px;
-    }
-  }
-</style>
 
 <script>
   const yesBtn = document.getElementById("yesBtn");
@@ -359,35 +360,20 @@
 
   const textElement = document.getElementById("typeEffect");
   const messages = [
-    "Don't even try to escape",
-    "Click 'No' if you're heartless",
-    "Bet you can’t catch the 'No'",
-    "Only the brave dare to say 'No'",
-    "Wanna play hard to get? Try hitting 'No'",
-    "Click 'No' if you don’t believe in love",
-    "Careful 'No' is slippery",
-    "Only legends catch the 'No' button",
-    "Try to say 'No' if you can",
-    "If you don’t love me prove it — click 'No'",
-    "Think you're cold? Hit 'No' and prove it",
-    "Clicking 'No' means no cuddles for you",
-    "Brave enough to break hearts? Try 'No'",
-    "Love is just one click away — or not",
-    "If 'No' is your choice, prepare for sadness",
-    "Clicking 'No' ends the fairytale",
-    "Say 'No' and face the consequences",
-    "Break my heart — go on, click 'No'",
-    "Prove you're tough — click 'No' if you dare",
-    "You really gonna say 'No' to this face?",
-    "No hugs if you click 'No'",
-    "Don’t play games unless you click 'No'",
-    "'No' leads to eternal loneliness",
-    "Clicking 'No' disables all the fun",
-    "Hit 'No' and make a panda cry",
-    "Feeling heartless today? Tap 'No'",
-    "Only villains click 'No'",
-    "Skip the 'No' — save a soul",
-    "'No' means deleting all your cookies",
+    "Don't even try to escape", "Click 'No' if you're heartless", "Bet you can’t catch the 'No'",
+    "Only the brave dare to say 'No'", "Wanna play hard to get? Try hitting 'No'", 
+    "Click 'No' if you don’t believe in love", "Careful 'No' is slippery",
+    "Only legends catch the 'No' button", "Try to say 'No' if you can",
+    "If you don’t love me prove it — click 'No'", "Think you're cold? Hit 'No' and prove it",
+    "Clicking 'No' means no cuddles for you", "Brave enough to break hearts? Try 'No'",
+    "Love is just one click away — or not", "If 'No' is your choice, prepare for sadness",
+    "Clicking 'No' ends the fairytale", "Say 'No' and face the consequences",
+    "Break my heart — go on, click 'No'", "Prove you're tough — click 'No' if you dare",
+    "You really gonna say 'No' to this face?", "No hugs if you click 'No'",
+    "Don’t play games unless you click 'No'", "'No' leads to eternal loneliness",
+    "Clicking 'No' disables all the fun", "Hit 'No' and make a panda cry",
+    "Feeling heartless today? Tap 'No'", "Only villains click 'No'", 
+    "Skip the 'No' — save a soul", "'No' means deleting all your cookies", 
     "Click 'No' and lose karma points"
   ];
 
