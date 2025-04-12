@@ -273,6 +273,8 @@
 <audio id="loveSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
 <audio id="noSound" src="https://www.fesliyanstudios.com/play-mp3/6678" preload="auto"></audio>
 
+<!-- YOUR EXISTING CODE ABOVE REMAINS UNCHANGED -->
+
 <!-- Footer -->
 <footer>
   <!-- Line 1 -->
@@ -289,13 +291,45 @@
 
   <!-- Line 2 -->
   <div class="footer-bottom">
-    © 2026 <strong>LoveFunCode</strong> | Developed by 
+    © 2016 <strong>LoveFunCode</strong> | Developed by 
     <a href="https://github.com/engrshuvodas" target="_blank" 
        style="color: #e91e63; text-decoration: none; font-weight: bold;">
       Engr Shuvo Das
     </a>
   </div>
 </footer>
+
+<style>
+  @media (max-width: 600px) {
+    .footer-top,
+    .footer-bottom {
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      gap: 6px;
+    }
+
+    .footer-text {
+      font-size: 14px !important;
+      white-space: nowrap;
+    }
+
+    .footer-bottom {
+      font-size: 14px !important;
+      white-space: nowrap;
+      margin: 0 auto !important;
+      padding: 0 10px;
+    }
+
+    .footer-instagram-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+</style>
+
 
 <script>
   const yesBtn = document.getElementById("yesBtn");
